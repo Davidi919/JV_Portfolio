@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- I coded this for my brother-in-law, he is a brilliant Photographer, I hope he continues to recreate his viewpoint through art. -->
+
+<head>
+  <title> Jesus Valenica | Photographer</title>
+  <!-- css link -->
+  <link href="./Style/style.css" type="text/css" rel="stylesheet">
+  <!-- Meta data -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Jesus Valencia | Photographer">
+  <meta name="description" content="Recreation of Life">
+  <script>
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+
+
+</head>
+
+<body>
+  <!--- Modal testing -->
+  <h2 style="text-align:center">Lightbox</h2>
+
+  <div class="row">
+    <div class="column">
+      <img src="https://via.placeholder.com/100x100" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="https://via.placeholder.com/100x100" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="https://via.placeholder.com/100x100" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="https://via.placeholder.com/100x100" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="https://via.placeholder.com/100x100" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="https://via.placeholder.com/100x100" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="https://via.placeholder.com/100x100" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="https://via.placeholder.com/100x100" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column">
+        <img class="demo cursor" src="https://via.placeholder.com/200x200" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://via.placeholder.com/200x200" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://via.placeholder.com/200x200" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://via.placeholder.com/200x200" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!--- Modal testing -->
+  <!-- main body body__con -->
+  <div id='main_body_con'>
+    <!-- begin header list, this contains my logo -->
+    <div class="header">
+      <div class="title_con">
+        <h1 id="title--header">JESUS VALENCIA</h1>
+      </div>
+    </div>
+    <div class="body--content">
+      <!-- begin side content nav -->
+      <div class="nav_con">
+        <ul class="nav_list">
+          <li class="nav_item" id="li--1">
+            <p>List item one</p>
+          </li>
+          <li class="nav_item" id="li--2">
+            <p>List item two</p>
+          </li>
+          <li class="nav_item" id="li--3">
+            <p>List Item three</p>
+          </li>
+          <li class="nav_item" id="li--4">
+            <p>List Item four</p>
+          </li>
+          <li class="nav_item" id="li--5">
+            <p>List Item five</p>
+          </li>
+          <li class="nav_item" id="li--6">
+            <p>List Item six</p>
+          </li>
+        </ul>
+      </div>
+      <div class="splash_con">
+        <figure>
+          <img class="splash--img" src="https://via.placeholder.com/1920x1080" alt="Main Image">
+          <figcaption>
+            The Room
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+  </div>
+  <!-- end of header ul -->
+  <!-- end of intro/landing page -->
+  <!-- My recent work ul, here will be at least the last 3 work items -->
+
+  <!-- End of recent work <ul> -->
+  <div class="footer">
+
+  </div>
+
+  <div class="copywrite">
+    &copy; Jesus Valencia <script>
+      document.write(' ' + new Date().getFullYear() + ' ');
+    </script>
+  </div>
+  </div>
+  <!-- end of body__con v  -->
+  </div>
+  <!-- end of body__con ^ -->
+
+
+
+
+</body>
+
+</html>

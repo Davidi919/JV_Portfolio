@@ -1,0 +1,269 @@
+/* import typefaces*/
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,700&display=swap');
+
+// ******  begin variables  ******
+//typeface stack
+$font-stack: 'Overpass Mono', monospace;
+
+//test border for problem solving/troubleshooting
+$test-border: 5px solid red;
+
+//color palette variables
+
+
+
+/* Lemon reset, or also known as the Meyer reset used to help with browser inconsistancies */
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: $font-stack;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*General html Rules*/
+html {
+  font-size: 14px;
+	font-family: $font-stack;
+  margin: 0;
+	letter-spacing: 3px;
+}
+/*button rules*/
+
+
+/*header sytling*/
+.title_con {
+	display: block;
+	height: 10em;
+	h1 {
+		float: right;
+		position: relative;
+		top: 75px;
+		font-size: 4.25rem;
+		font-weight: 300;
+	}
+      }
+.splash_con {
+	margin-top: 0;
+	display: block;
+	border: 3px solid red;
+	width: 84%;
+	float: right;
+	.splash--img {
+		padding-left: 10%;
+		width: 90%;
+	}
+	figcaption {
+		text-transform: uppercase;
+		text-align: right;
+		padding-right: 12px;
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+}
+
+
+.nav_con {
+	width: 14%;
+	height: 300px;
+	border: 3px solid pink;
+	display: inline-block;
+}
+
+
+.footer {
+
+	width: 100%;
+	height: 800px;
+	margin-bottom: -10px;
+	.footer__img {
+		width: 100px;
+		height: 100px;
+		padding: 0;
+	}
+	.footer__ul {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+
+	}
+	.copywrite {
+
+		letter-spacing: .5rem;
+		font-size: 2.5rem;
+		padding-top: 100px;
+		padding-bottom: 0;
+		color: #C6C6C6;
+		text-align: right;
+
+	}
+
+}
+
+/* Modal testing */
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* modal testing */
