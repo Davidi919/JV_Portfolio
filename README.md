@@ -1,6 +1,6 @@
 # Portfolio Redux
 
-This is a redesign of my Portfolio website using mobile first design, BEM naming conventions, and Sass for styling.
+This is Jesus Valencia's Photography Portfolio website using mobile first design, BEM naming conventions, and Sass for styling.
 
 ## Built With
 
